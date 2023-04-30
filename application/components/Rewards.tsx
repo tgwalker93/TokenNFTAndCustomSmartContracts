@@ -59,7 +59,7 @@ export default function Rewards({ miningContract, tokenContract }: Props) {
       )}
       <p className={styles.noGapBottom}>
         {console.log(balance)}
-        Balance: <b>0{decimals}</b>
+        Balance: <b>0{balance?.displayValue}</b>
       </p>
       <p>
         Unclaimed:{" "}

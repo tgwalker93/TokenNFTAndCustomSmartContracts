@@ -1,11 +1,13 @@
 import { ConnectWallet, ThirdwebProvider, useContract  } from "@thirdweb-dev/react";
 import "./styles/Home.css";
 import LandingPage from './pages/LandingPage';
+import QuestionsPage from './pages/QuestionsPage'
+import Main from './pages/Main'
 
 export default function App() {
   return (
     <ThirdwebProvider activeChain="goerli">
-      <LandingPage />
+      <Main />
     </ThirdwebProvider>
   )
 }

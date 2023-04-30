@@ -9,7 +9,7 @@ import "@thirdweb-dev/contracts/openzeppelin-presets/utils/ERC1155/ERC1155Holder
 // OpenZeppelin (ReentrancyGuard)
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-contract CoinAndNFT is ReentrancyGuard, ERC1155Holder {
+contract CoinAndNFT2 is ReentrancyGuard, ERC1155Holder {
     // Store our two other contracts here (Edition Drop and Token)
     DropERC1155 public immutable cornNFTCollection;
     TokenERC20 public immutable rewardsToken;
@@ -34,32 +34,10 @@ contract CoinAndNFT is ReentrancyGuard, ERC1155Holder {
     // In this example, the tokenId of the corn is the multiplier for the reward.
     mapping(address => MapValue) public playerCorn;
 
-    // Mapping of player address until last time they staked/withdrew/claimed their rewards
-    // By default, player has no last time. They will not be in the mapping.
-    mapping(address => MapValue) public playerLastUpdate;
+    function claim(uint256 amount) external nonReentrant {
+    // Calculate the rewards they are owed, and pay them out.
+    uint256 reward = amount;
+    rewardsToken.transfer(msg.sender, reward);
 
-
-    function stake(uint256 _tokenId) external nonReentrant {
-        // Transfer the Corn to the contract
-        cornNFTCollection.safeTransferFrom(
-            msg.sender,
-            address(this),
-            _tokenId,
-            1,
-            "Staking your corn"
-        );
-
-        // Update the playerCorn mapping
-        playerCorn[msg.sender].value = _tokenId;
-        playerCorn[msg.sender].isData = true;
-
-        // Update the playerLastUpdate mapping
-        playerLastUpdate[msg.sender].isData = true;
-        playerLastUpdate[msg.sender].value = block.timestamp;
-    }
-
-    function getCoin() public {
-        uint256 amount = 1 * 10**18; // 1 ERC20 coin
-        rewardsToken.transfer(msg.sender, amount);
     }
 }
