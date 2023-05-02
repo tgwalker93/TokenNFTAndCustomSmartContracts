@@ -1,5 +1,5 @@
 ﻿# TokenNFTAndCustomSmartContracts
-I worked with the thirdweb framework for building third web apps (https://thirdweb.com/dashboard/contracts), their github has great starter code: https://github.com/thirdweb-example. They provide an SDK, and great template smart contracts. I struggled alot with getting the functionality of the custom smart contracts to work. Ultimately, I learned how to interface with smart contracts using the Thirdweb SDK, and build dApps. 
+I worked with the thirdweb framework for building third web apps (https://thirdweb.com/dashboard/contracts), their github has great starter code: https://github.com/thirdweb-example. They provide an SDK, and great template smart contracts. I struggled alot with getting the functionality of the custom smart contracts to work. Ultimately, I learned how to interface with smart contracts in software applicaitons using the Thirdweb SDK, build custom smart contracts and publish/deploy them. 
 
 ## Team Members
 - Tyler Walker (Me, myself, and I)
