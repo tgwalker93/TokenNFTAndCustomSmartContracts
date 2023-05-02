@@ -25,7 +25,10 @@ I built this simple application myself using React. This is where I wanted to bu
       - ![image](https://user-images.githubusercontent.com/23727813/235563411-8c197520-602e-4f32-9a51-99721ab8cc4d.png)
    - **CoinAndNFT.sol** - This is my custom smart contract where I have a basic function "claim", that simply rewards some OFC based when the "reward" parameters. I deployed this smart contract to Thirdweb, and the published it. Using the Thirdweb SDK, I was able to call this custom method in Application2. The code for the "claim" method is shown below. 
     - ![image](https://user-images.githubusercontent.com/23727813/235562412-85307322-42e5-4a8d-9cd5-747cb7f02922.png)
-
+    
+## Different Smart Contract Interfaces that I worked with
+1. ERC-1155
+2. ERC-20
 ## Goals for the future
 This project was a huge success for me. I was not trying to build anything novel. I simply wanted to learn how to build dApps. Working with the Thirdweb framework, I think I know have all the tools I need to build my own dApp. I would like to think about, and design a play-to-earn game or some application where you can use some custom ERC20 coin, and custom NFTs. It's a lot of fun working with smart contracts, and I feel like this project has opened the door for a whole bunch of opportunities to build things that could be really cool. I'm not so sure that the Stackoverflow with ERC20 idea will work, but maybe something similiar to it. 
 
