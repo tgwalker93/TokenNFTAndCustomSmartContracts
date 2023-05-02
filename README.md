@@ -5,8 +5,8 @@ I worked with the thirdweb framework for building DApps (https://thirdweb.com/da
 - Tyler Walker (Me, myself, and I) - tywa3656@colorado.edu
 
 ## Videos
-1. Introduction: https://youtu.be/8TeNq-5mbq8
-2. Demo of Applications: https://youtu.be/Z4-WMwnRHHk
+1. Introduction: https://youtu.be/Z4-WMwnRHHk
+2. Demo of Applications: https://youtu.be/8TeNq-5mbq8
 
 ## There are 5 main smart contracts that I deployed that I am working with in 2 web applications in this repository:
 1. **Miners Contract - ERC1155** - 0x74e16D7B8C14358f6628eEA75606D6CCc5cb0B94 - A contract for the "Character" NFT. In the first application, you can mint this NFT directly and for free. This application allows you to "select" a character and mint that character as an NFT. So I could easily add various NFT characters and allow the user to select a character in order to play a fun game in the browser. For this application though, I just have 1 NFT character that you can select, after you mint the NFT to your wallet, then you can start the "game".
