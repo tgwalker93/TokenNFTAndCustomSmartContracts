@@ -27,8 +27,9 @@ I built this simple application myself using React. This is where I wanted to bu
     - ![image](https://user-images.githubusercontent.com/23727813/235562412-85307322-42e5-4a8d-9cd5-747cb7f02922.png)
     
 ## Different Smart Contract Interfaces that I worked with
-1. **ERC-1155**
-2. **ERC-20**
+1. **ERC-1155** - Multi-Token Standard (https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) - I used this interface for building my NFTs, but it can handle many combination of token types such as fungible, non-fungible, semi-fungible and other kinds of tokens.
+2. **ERC-20** - Token Standard (https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) - This is the standard token interface for custom fungible tokens on the Ethereum blockchain. This is how I created Overflowcoin (OFC). This is really interesting because most coins that you find on Coinbase are actually made with the ERC20 standard. It was a lot of fun to work with OFC!
+
 ## Goals for the future
 This project was a huge success for me. I was not trying to build anything novel. I simply wanted to learn how to build dApps. Working with the Thirdweb framework, I think I know have all the tools I need to build my own dApp. I would like to think about, and design a play-to-earn game or some application where you can use some custom ERC20 coin, and custom NFTs. It's a lot of fun working with smart contracts, and I feel like this project has opened the door for a whole bunch of opportunities to build things that could be really cool. I'm not so sure that the Stackoverflow with ERC20 idea will work, but maybe something similiar to it. 
 
