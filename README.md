@@ -23,6 +23,6 @@ I built this simple application myself using React. This is where I wanted to bu
 3. **/contracts** - There are two particular custom smart contracts that I deployed to thirdweb, and published:
   - **Mining.sol** - This is in solidity, and this smart contract code with mostly copied from the template from Thirdweb's github. It takes two arguments: pickaxeNftCollection, and rewardsToken. The pickaxeNftCollection connects to my corn NFT smart contract, and the rewardsToken connects to my Overflowcoin ERC20 smart contract. When I publish this contract in Thirdweb, I have to specify these parameters and I can use these parameters in my smart contract code. 
   - **CoinAndNFT.sol** - This is my custom smart contract where I have a basic function "claim", that simply rewards some OFC based when the "reward" parameters. I deployed this smart contract to Thirdweb, and the published it. Using the Thirdweb SDK, I was able to call this custom method in Application2. The code for this method is shown below. 
-    -![image](https://user-images.githubusercontent.com/23727813/235562412-85307322-42e5-4a8d-9cd5-747cb7f02922.png)
+    - ![image](https://user-images.githubusercontent.com/23727813/235562412-85307322-42e5-4a8d-9cd5-747cb7f02922.png)
 
   
