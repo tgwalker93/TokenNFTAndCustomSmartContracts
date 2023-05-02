@@ -5,7 +5,7 @@ I worked with the thirdweb framework for building DApps (https://thirdweb.com/da
 - Tyler Walker (Me, myself, and I) - tywa3656@colorado.edu
 
 ## Videos
-1. Introduction: <a href="https://youtu.be/Z4-WMwnRHHk" target="_blank">https://youtu.be/Z4-WMwnRHHk</a>
+1. Introduction: <a href="https://youtu.be/Z4-WMwnRHHk" target="_blank">test</a>
 2. Demo of Applications: <a href="https://youtu.be/8TeNq-5mbq8" target="_blank">https://youtu.be/8TeNq-5mbq8</a>
 
 ## There are 5 main smart contracts that I deployed that I am working with in 2 web applications in this repository:
