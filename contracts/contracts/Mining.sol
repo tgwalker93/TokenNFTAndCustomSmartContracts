@@ -109,7 +109,7 @@ contract Mining is ReentrancyGuard, ERC1155Holder {
 
     function claim() external nonReentrant {
         // Calculate the rewards they are owed, and pay them out.
-        uint256 reward = 1000;
+        uint256 reward = calculateRewards(msg.sender);
         rewardsToken.transfer(msg.sender, reward);
 
         // Update the playerLastUpdate mapping

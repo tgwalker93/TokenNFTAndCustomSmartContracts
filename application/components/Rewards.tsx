@@ -13,7 +13,6 @@ import { ethers } from "ethers";
 import styles from "../styles/Home.module.css";
 import ApproxRewards from "./ApproxRewards";
 import { MINING_CONTRACT_ADDRESS } from "../const/contractAddresses";
-import { useContract, useTokenDecimals } from "@thirdweb-dev/react";
 
 type Props = {
   miningContract: SmartContract<any>;
@@ -31,23 +30,18 @@ export default function Rewards({ miningContract, tokenContract }: Props) {
 
   const { data: tokenMetadata } = useMetadata(tokenContract);
   const { data: currentBalance } = useTokenBalance(tokenContract, address);
-  const { data: balance, isLoading, error1 } = useTokenBalance(tokenContract, address);
-  const { tContract, isLoading2 } = useContract("0xba60D11B168919f87fad91A0197Dce0D3Bc3b5dB");
-  const { data: decimals, isLoading3, error2 } = useTokenDecimals(tContract);
   const { data: unclaimedAmount } = useContractRead(
     miningContract,
     "calculateRewards",
     address
   );
 
-  // const balance = await tokenContract.erc20.balance();
-
   return (
     <div
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
       <p>
-        Your <b>Gold Gems</b>
+        Your <b>Overflowcoins</b>
       </p>
 
       {tokenMetadata && (
@@ -58,8 +52,7 @@ export default function Rewards({ miningContract, tokenContract }: Props) {
         />
       )}
       <p className={styles.noGapBottom}>
-        {console.log(balance)}
-        Balance: <b>0{balance?.displayValue}</b>
+        Balance: <b>{currentBalance?.displayValue}</b>
       </p>
       <p>
         Unclaimed:{" "}

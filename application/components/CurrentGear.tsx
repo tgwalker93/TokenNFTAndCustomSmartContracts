@@ -1,91 +1,40 @@
-import { ThirdwebNftMedia, useAddress, useNFT } from "@thirdweb-dev/react";
-import { EditionDrop, NFT, SmartContract } from "@thirdweb-dev/sdk";
-import React, { useEffect, useState } from "react";
-import ContractMappingResponse from "../types/ContractMappingResponse";
-import GameplayAnimation from "./GameplayAnimation";
-import styles from "../styles/Home.module.css";
+import { NFT } from "@thirdweb-dev/sdk";
+import React from "react";
+import styles from "../styles/Gameplay.module.css";
+
+const GoldGem = (
+  <div className={styles.slide}>
+    <img src="./OverflowCoin.PNG" height="48" width="48" alt="gold-gem" />
+  </div>
+);
 
 type Props = {
-  miningContract: SmartContract<any>;
-  characterContract: EditionDrop;
-  pickaxeContract: EditionDrop;
+  pickaxe: NFT | undefined;
 };
 
-/**
- * This component shows the:
- * - Currently equipped miner character (right now there is just one (token ID 0))
- * - Currently equipped character's pickaxe
- */
-export default function CurrentGear({
-  miningContract,
-  characterContract,
-  pickaxeContract,
-}: Props) {
-  const address = useAddress();
-
-  console.log(address)
-
-  const { data: playerNft } = useNFT(characterContract, 0);
-  const [pickaxe, setPickaxe] = useState<NFT>();
-
-  // useEffect(() => {
-  //   (async () => {
-  //     if (!address) return;
-
-  //     const p = (await miningContract.call(
-  //       "playerPickaxe",
-  //       address
-  //     )) as ContractMappingResponse;
-
-  //     //Now we have the tokenId of the equipped pickaxe, if there is one, fetch the metadata for it
-  //     if (p.isData) {
-  //       const pickaxeMetadata = await pickaxeContract.get(p.value);
-  //       setPickaxe(pickaxeMetadata);
-  //     }
-  //   })();
-  // }, [address, miningContract, pickaxeContract]);
+export default function GameplayAnimation({ pickaxe }: Props) {
+  if (!pickaxe) {
+    return <div style={{ marginLeft: 8 }}> <div className={`${styles.nftBox} ${styles.spacerBottom}`}>
+    <img src="./NFT1.PNG" style={{ height: 200 }} />
+  </div>I need CORN to earn rewards!</div>;
+  }
 
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
-      <h2 className={`${styles.noGapTop} `}>Equipped Items</h2>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "row",
-          justifyContent: "center",
-        }}
-      >
-        {/* Currently equipped player */}
-        <div style={{ outline: "1px solid grey", borderRadius: 16 }}>
-          {playerNft && (
-            <ThirdwebNftMedia metadata={playerNft?.metadata} height={"64"} />
-          )}
-        </div>
-        {/* Currently equipped pickaxe */}
-        <div
-          style={{ outline: "1px solid grey", borderRadius: 16, marginLeft: 8 }}
-        >
-          {pickaxe && (
-            // @ts-ignore
-            <ThirdwebNftMedia metadata={pickaxe.metadata} height={"64"} />
-          )}
-        </div>
-      </div>
-
-      {/* Gameplay Animation */}
-
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "center",
-          marginTop: 24,
-        }}
-      >
-        <img src="./mine.gif" height={64} width={64} alt="character-mining" />
-        <GameplayAnimation pickaxe={pickaxe} />
+    <div className={styles.slider}>
+      <div className={styles.slideTrack}>
+        {GoldGem}
+        {GoldGem}
+        {GoldGem}
+        {GoldGem}
+        {GoldGem}
+        {GoldGem}
+        {GoldGem}
+        {GoldGem}
+        {GoldGem}
+        {GoldGem}
+        {GoldGem}
+        {GoldGem}
+        {GoldGem}
       </div>
     </div>
   );

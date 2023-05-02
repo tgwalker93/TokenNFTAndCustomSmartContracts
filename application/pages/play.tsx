@@ -53,12 +53,6 @@ export default function Play() {
             characterContract={characterContract}
             pickaxeContract={pickaxeContract}
           />
-          {/* <Web3Button
-            contractAddress="0x02190772D769B657650c1df3424FCaBfC075eF61"
-            action={(contract) => {
-              contract.call("getCoin", [])
-            }}
-          /> */}
           <Rewards
             miningContract={miningContract}
             tokenContract={tokenContract}
