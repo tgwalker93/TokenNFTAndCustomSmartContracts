@@ -20,6 +20,6 @@ I could not get this application to work, but I was atleast able to get basic fu
 
 I spent alot of time trying to resolve this error along with many other errors. It's really difficult to debug custom smart contract code. If a custom smart contract compiles correctly, then when you face runtime errors it can be difficult to track down and you'll find little help on the internet. Overall though, i'm really glad with how far i've come with this application. 
 
-2. **./Application2** 
+2. **./Application2** -
 This is where I wanted to build my custom application. At first you connect your wallet. Currently, it just shows a comment box, review stars, and a button. If you click the button, then my custom contract will be called and then it will reward the connected wallet with free OFC!  I wanted my application to work similiar to Stackoverflow, but where the poster could reward the best answer with some OFC. However, this project proved to be much harder than I thought, and so I focused much less on building software and more on learning how to work with Web3. 
 
