@@ -22,4 +22,7 @@ I spent alot of time trying to resolve this error along with many other errors. 
 
 2. **/Application2** -
 I built this simple application myself using React. This is where I wanted to build my custom application. At first you connect your wallet. Currently, it just shows a comment box, review stars, and a button. If you click the button, then my custom contract (CoinAndNFT2) will be called and then it will reward the connected wallet with free OFC!  I wanted my application to work similiar to Stackoverflow, but where the poster could reward the best answer with some OFC. However, this project proved to be much harder than I thought, and so I focused much less on building software and more on learning how to work with smart contracts in Software applications. I managed to get my custom function "claim" working from my custom smart contract. This is great because I personally wrote the code, deployed it to thirdweb, and then published the smart contract. By using the SDK, i was able to call this custom function. 
-3. **/contracts** - 
+3. **/contracts** - There are two particular custom smart contracts that I deployed to thirdweb, and published:
+  - **Mining.sol**
+  - **CoinAndNFT.sol**
+  
