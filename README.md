@@ -1,7 +1,7 @@
 ﻿# TokenNFTAndCustomSmartContracts
 I worked a lot with the thirdweb framework for building third web apps (https://thirdweb.com/dashboard/contracts), their github has great starter code: https://github.com/thirdweb-example. They provide a great SDK, and great template smart contracts, and they also utilize OpenZeppellin. I struggled alot with getting some basic functionality.
 
-##Videos
+## Videos
 1. Introduction: https://youtu.be/8TeNq-5mbq8
 2. Demo of Applications: https://youtu.be/Z4-WMwnRHHk
 
