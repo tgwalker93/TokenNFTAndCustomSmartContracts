@@ -16,7 +16,7 @@ I worked with the thirdweb framework for building third web apps (https://thirdw
 1. **/Application** -
 This application was built off of the Thirdweb template application and uses typescript and react. I could not get this application to work, but I was atleast able to get basic functionality working. At first, you connect your wallet. Then if the application see that you do not have a character NFT in your wallet, then it will ask you to mint the "Miners Contract" character NFT. Once you mint the charater NFT contract for free, then the application routes you to the "play game" button. After clicking the "play game", button, then you will be able to purchase weakcorn, and weirdcorn NFTs with my custom ERC20 coin called Overflowcoin (OFC). I got this part working. Once you purchase corn, you have to choose to "equip" the corn, but that equip button calls a custom method in the custom Mining smart contract and it does not work unfortunately. After you equip the corn, you are supposed to start earning OFC, but that does not happen unfortuantely. I kept getting this error when I called "Equip":
 
-![1](https://user-images.githubusercontent.com/23727813/235560241-641f6b62-cd82-4612-b9ef-43ca64d71ca4.PNG)
+  -![1](https://user-images.githubusercontent.com/23727813/235560241-641f6b62-cd82-4612-b9ef-43ca64d71ca4.PNG)
 
 I spent alot of time trying to resolve this error along with many other errors. It's really difficult to debug custom smart contract code. If a custom smart contract compiles correctly, then when you face runtime errors it can be difficult to track down and you'll find little help on the internet. Overall though, i'm really glad with how far i've come with this application. 
 
